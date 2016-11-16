@@ -1,0 +1,36 @@
+﻿<xapCache source="C:\inetpub\HML\ClinVitta\ClinVitta\Bin\Debug\ClinVitta.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="12/11/2016 15:05:24">
+  <file source="C:\inetpub\HML\ClinVitta\ClinVitta\obj\Debug\ClinVitta.dll" archivePath="ClinVitta.dll" lastWriteTime="12/11/2016 15:05:17" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\Microsoft.CSharp.dll" archivePath="Microsoft.CSharp.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Controls.dll" archivePath="Microsoft.Expression.Controls.dll" lastWriteTime="18/02/2013 14:32:08" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Drawing.dll" archivePath="Microsoft.Expression.Drawing.dll" lastWriteTime="18/02/2013 14:32:08" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Effects.dll" archivePath="Microsoft.Expression.Effects.dll" lastWriteTime="18/02/2013 14:32:08" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Interactions.dll" archivePath="Microsoft.Expression.Interactions.dll" lastWriteTime="18/02/2013 14:32:08" />
+  <file source="C:\inetpub\HML\ClinVitta\SilverlightMenu.Library\Bin\Debug\SilverlightMenu.Library.dll" archivePath="SilverlightMenu.Library.dll" lastWriteTime="12/11/2016 15:05:16" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ComponentModel.Composition.dll" archivePath="System.ComponentModel.Composition.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ComponentModel.Composition.Initialization.dll" archivePath="System.ComponentModel.Composition.Initialization.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Json.dll" archivePath="System.Json.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.dll" archivePath="System.ServiceModel.DomainServices.Client.dll" lastWriteTime="12/04/2013 02:58:22" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.Web.dll" archivePath="System.ServiceModel.DomainServices.Client.Web.dll" lastWriteTime="12/04/2013 02:58:22" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ServiceModel.Extensions.dll" archivePath="System.ServiceModel.Extensions.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ServiceModel.NetTcp.dll" archivePath="System.ServiceModel.NetTcp.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ServiceModel.Web.Extensions.dll" archivePath="System.ServiceModel.Web.Extensions.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.dll" archivePath="System.Windows.Controls.Data.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.Input.dll" archivePath="System.Windows.Controls.Data.Input.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.dll" archivePath="System.Windows.Controls.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.Windows.Controls.DomainServices.dll" archivePath="System.Windows.Controls.DomainServices.dll" lastWriteTime="12/04/2013 02:58:22" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Input.dll" archivePath="System.Windows.Controls.Input.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Navigation.dll" archivePath="System.Windows.Controls.Navigation.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Pivot.dll" archivePath="System.Windows.Controls.Pivot.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\inetpub\HML\ClinVitta\System.Windows.Controls.Toolkit.dll" archivePath="System.Windows.Controls.Toolkit.dll" lastWriteTime="16/04/2016 11:37:32" />
+  <file source="C:\inetpub\HML\ClinVitta\System.Windows.Controls.Toolkit.Internals.dll" archivePath="System.Windows.Controls.Toolkit.Internals.dll" lastWriteTime="16/04/2016 11:37:31" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Data.dll" archivePath="System.Windows.Data.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="18/02/2013 14:32:08" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Xml.Linq.dll" archivePath="System.Xml.Linq.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Xml.Serialization.dll" archivePath="System.Xml.Serialization.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Xml.Utils.dll" archivePath="System.Xml.Utils.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Xml.XPath.dll" archivePath="System.Xml.XPath.dll" lastWriteTime="18/11/2011 18:40:20" />
+  <file source="C:\inetpub\HML\ClinVitta\ClinVitta\favicon.ico" archivePath="favicon.ico" lastWriteTime="12/11/2016 15:23:06" />
+  <file source="C:\inetpub\HML\ClinVitta\ClinVitta\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="12/11/2016 15:03:37" />
+  <file source="C:\inetpub\HML\ClinVitta\ClinVitta\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12/11/2016 15:03:59" />
+</xapCache>

@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="TipoDocumento">
+        <s:complexType />
+      </s:element>
+      <s:element name="TipoDocumentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TipoDocumentoResult" type="tns:ArrayOfTpDocEmitido" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTpDocEmitido">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TpDocEmitido" nillable="true" type="tns:TpDocEmitido" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TpDocEmitido">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DESCTIPODOC" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDDESCTIPODOC" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TipoOrgaoEmissor">
+        <s:complexType />
+      </s:element>
+      <s:element name="TipoOrgaoEmissorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TipoOrgaoEmissorResult" type="tns:ArrayOfTipoOrgaoEmissorDoc" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTipoOrgaoEmissorDoc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TipoOrgaoEmissorDoc" nillable="true" type="tns:TipoOrgaoEmissorDoc" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TipoOrgaoEmissorDoc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NomeOrgao" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodNomeOrgao" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TipoTelefone">
+        <s:complexType />
+      </s:element>
+      <s:element name="TipoTelefoneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TipoTelefoneResult" type="tns:ArrayOfTpTELEFONE" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTpTELEFONE">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TpTELEFONE" nillable="true" type="tns:TpTELEFONE" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TpTELEFONE">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DESCRICAO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CODTPTEL" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tipo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ddd" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscaListaUF">
+        <s:complexType />
+      </s:element>
+      <s:element name="BuscaListaUFResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscaListaUFResult" type="tns:ArrayOfListaUF" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfListaUF">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ListaUF" nillable="true" type="tns:ListaUF" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ListaUF">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UF" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDUF" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PARAMETROS_CADASTRO_CLIENTE">
+        <s:complexType />
+      </s:element>
+      <s:element name="PARAMETROS_CADASTRO_CLIENTEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PARAMETROS_CADASTRO_CLIENTEResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GerarCodCli">
+        <s:complexType />
+      </s:element>
+      <s:element name="GerarCodCliResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GerarCodCliResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PesquisaCadastroCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pFiltro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDADOS" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PesquisaCadastroClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PesquisaCadastroClienteResult" type="tns:ArrayOfTipoCamposCadPaciente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTipoCamposCadPaciente">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TipoCamposCadPaciente" nillable="true" type="tns:TipoCamposCadPaciente" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TipoCamposCadPaciente">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NOME_paciente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CPF_CNPJ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RG_IE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Emissor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Uf_Emissao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sexo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estado_Civil" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Data_Nascimento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome_Mae" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome_Pai" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Celular" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fone_Fixo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cep" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Uf" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cidade" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dt_Emissao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Bairro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ponto_Referencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tipo_Logradouro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Desc_Logradouro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="End_Num" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Desc_Complemento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Desc_Obs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="User_Cadastro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Data_Cadastro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tipo_Doc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Qt_Dependentes" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Num_Seg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pessoa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome_Fantasia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tipo_Incricao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Atividade" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dt_Inicio_Atividade" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dt_Junta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dt_Ult_Alt_Contratual" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Capital_Social" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Faturamento_Mensal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Resp_Comercial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Resp_Comercial_Tel_Fixo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Resp_Comercial_Celular" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dtVenceDoc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FILIAL_CAD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NOSSOCLIENTE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PRIMERAHABILITACAO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CATEGORIAHABILITACAO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DATAVENCHABILITACAO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RENACHE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OBS_HABILITACAO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NUMEROREGISTRO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Profissao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CODCLI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OBSGERALCADASTRO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NOME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CPF" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome_paciente" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PesquisaCadastroClienteCompleto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCODCLI" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PesquisaCadastroClienteCompletoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PesquisaCadastroClienteCompletoResult" type="tns:TipoCamposCadPaciente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PesquisaTelefoneCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCODCLI" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PesquisaTelefoneClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PesquisaTelefoneClienteResult" type="tns:ArrayOfTpTELEFONE" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArrayOfTpDocEmitido" nillable="true" type="tns:ArrayOfTpDocEmitido" />
+      <s:element name="ArrayOfTipoOrgaoEmissorDoc" nillable="true" type="tns:ArrayOfTipoOrgaoEmissorDoc" />
+      <s:element name="ArrayOfTpTELEFONE" nillable="true" type="tns:ArrayOfTpTELEFONE" />
+      <s:element name="ArrayOfListaUF" nillable="true" type="tns:ArrayOfListaUF" />
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="ArrayOfTipoCamposCadPaciente" nillable="true" type="tns:ArrayOfTipoCamposCadPaciente" />
+      <s:element name="TipoCamposCadPaciente" nillable="true" type="tns:TipoCamposCadPaciente" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TipoDocumentoSoapIn">
+    <wsdl:part name="parameters" element="tns:TipoDocumento" />
+  </wsdl:message>
+  <wsdl:message name="TipoDocumentoSoapOut">
+    <wsdl:part name="parameters" element="tns:TipoDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TipoOrgaoEmissorSoapIn">
+    <wsdl:part name="parameters" element="tns:TipoOrgaoEmissor" />
+  </wsdl:message>
+  <wsdl:message name="TipoOrgaoEmissorSoapOut">
+    <wsdl:part name="parameters" element="tns:TipoOrgaoEmissorResponse" />
+  </wsdl:message>
+  <wsdl:message name="TipoTelefoneSoapIn">
+    <wsdl:part name="parameters" element="tns:TipoTelefone" />
+  </wsdl:message>
+  <wsdl:message name="TipoTelefoneSoapOut">
+    <wsdl:part name="parameters" element="tns:TipoTelefoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscaListaUFSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscaListaUF" />
+  </wsdl:message>
+  <wsdl:message name="BuscaListaUFSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscaListaUFResponse" />
+  </wsdl:message>
+  <wsdl:message name="PARAMETROS_CADASTRO_CLIENTESoapIn">
+    <wsdl:part name="parameters" element="tns:PARAMETROS_CADASTRO_CLIENTE" />
+  </wsdl:message>
+  <wsdl:message name="PARAMETROS_CADASTRO_CLIENTESoapOut">
+    <wsdl:part name="parameters" element="tns:PARAMETROS_CADASTRO_CLIENTEResponse" />
+  </wsdl:message>
+  <wsdl:message name="GerarCodCliSoapIn">
+    <wsdl:part name="parameters" element="tns:GerarCodCli" />
+  </wsdl:message>
+  <wsdl:message name="GerarCodCliSoapOut">
+    <wsdl:part name="parameters" element="tns:GerarCodCliResponse" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaCadastroClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:PesquisaCadastroCliente" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaCadastroClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:PesquisaCadastroClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaCadastroClienteCompletoSoapIn">
+    <wsdl:part name="parameters" element="tns:PesquisaCadastroClienteCompleto" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaCadastroClienteCompletoSoapOut">
+    <wsdl:part name="parameters" element="tns:PesquisaCadastroClienteCompletoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaTelefoneClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:PesquisaTelefoneCliente" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaTelefoneClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:PesquisaTelefoneClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="TipoDocumentoHttpGetIn" />
+  <wsdl:message name="TipoDocumentoHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTpDocEmitido" />
+  </wsdl:message>
+  <wsdl:message name="TipoOrgaoEmissorHttpGetIn" />
+  <wsdl:message name="TipoOrgaoEmissorHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTipoOrgaoEmissorDoc" />
+  </wsdl:message>
+  <wsdl:message name="TipoTelefoneHttpGetIn" />
+  <wsdl:message name="TipoTelefoneHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTpTELEFONE" />
+  </wsdl:message>
+  <wsdl:message name="BuscaListaUFHttpGetIn" />
+  <wsdl:message name="BuscaListaUFHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfListaUF" />
+  </wsdl:message>
+  <wsdl:message name="PARAMETROS_CADASTRO_CLIENTEHttpGetIn" />
+  <wsdl:message name="PARAMETROS_CADASTRO_CLIENTEHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GerarCodCliHttpGetIn" />
+  <wsdl:message name="GerarCodCliHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaCadastroClienteHttpGetIn">
+    <wsdl:part name="pFiltro" type="s:string" />
+    <wsdl:part name="pDADOS" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaCadastroClienteHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTipoCamposCadPaciente" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaCadastroClienteCompletoHttpGetIn">
+    <wsdl:part name="pCODCLI" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaCadastroClienteCompletoHttpGetOut">
+    <wsdl:part name="Body" element="tns:TipoCamposCadPaciente" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaTelefoneClienteHttpGetIn">
+    <wsdl:part name="pCODCLI" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaTelefoneClienteHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTpTELEFONE" />
+  </wsdl:message>
+  <wsdl:message name="TipoDocumentoHttpPostIn" />
+  <wsdl:message name="TipoDocumentoHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTpDocEmitido" />
+  </wsdl:message>
+  <wsdl:message name="TipoOrgaoEmissorHttpPostIn" />
+  <wsdl:message name="TipoOrgaoEmissorHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTipoOrgaoEmissorDoc" />
+  </wsdl:message>
+  <wsdl:message name="TipoTelefoneHttpPostIn" />
+  <wsdl:message name="TipoTelefoneHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTpTELEFONE" />
+  </wsdl:message>
+  <wsdl:message name="BuscaListaUFHttpPostIn" />
+  <wsdl:message name="BuscaListaUFHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfListaUF" />
+  </wsdl:message>
+  <wsdl:message name="PARAMETROS_CADASTRO_CLIENTEHttpPostIn" />
+  <wsdl:message name="PARAMETROS_CADASTRO_CLIENTEHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GerarCodCliHttpPostIn" />
+  <wsdl:message name="GerarCodCliHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaCadastroClienteHttpPostIn">
+    <wsdl:part name="pFiltro" type="s:string" />
+    <wsdl:part name="pDADOS" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaCadastroClienteHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTipoCamposCadPaciente" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaCadastroClienteCompletoHttpPostIn">
+    <wsdl:part name="pCODCLI" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaCadastroClienteCompletoHttpPostOut">
+    <wsdl:part name="Body" element="tns:TipoCamposCadPaciente" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaTelefoneClienteHttpPostIn">
+    <wsdl:part name="pCODCLI" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PesquisaTelefoneClienteHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTpTELEFONE" />
+  </wsdl:message>
+  <wsdl:portType name="Busca_Dados_Cadastro_ClienteSoap">
+    <wsdl:operation name="TipoDocumento">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista Os Tipos de Documentos</wsdl:documentation>
+      <wsdl:input message="tns:TipoDocumentoSoapIn" />
+      <wsdl:output message="tns:TipoDocumentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TipoOrgaoEmissor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista Os Tipos de Orgões Emissor</wsdl:documentation>
+      <wsdl:input message="tns:TipoOrgaoEmissorSoapIn" />
+      <wsdl:output message="tns:TipoOrgaoEmissorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TipoTelefone">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista Os Tipos de Telefones</wsdl:documentation>
+      <wsdl:input message="tns:TipoTelefoneSoapIn" />
+      <wsdl:output message="tns:TipoTelefoneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscaListaUF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista de UF.</wsdl:documentation>
+      <wsdl:input message="tns:BuscaListaUFSoapIn" />
+      <wsdl:output message="tns:BuscaListaUFSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PARAMETROS_CADASTRO_CLIENTE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">PESQUISA_PARAMETROS_CADASTRO DE CLIENTE</wsdl:documentation>
+      <wsdl:input message="tns:PARAMETROS_CADASTRO_CLIENTESoapIn" />
+      <wsdl:output message="tns:PARAMETROS_CADASTRO_CLIENTESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GerarCodCli">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GERA CODCLI NA MV_CAD_CLIENTE</wsdl:documentation>
+      <wsdl:input message="tns:GerarCodCliSoapIn" />
+      <wsdl:output message="tns:GerarCodCliSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Pesquisa Dados Cliente Simplificada return = (NOME,RG_IE,CPF_CNP,CODCLIJ)</wsdl:documentation>
+      <wsdl:input message="tns:PesquisaCadastroClienteSoapIn" />
+      <wsdl:output message="tns:PesquisaCadastroClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroClienteCompleto">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Pesquisa Dados Cliente Completo</wsdl:documentation>
+      <wsdl:input message="tns:PesquisaCadastroClienteCompletoSoapIn" />
+      <wsdl:output message="tns:PesquisaCadastroClienteCompletoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaTelefoneCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Pesquisa de Telefone de Cliente.</wsdl:documentation>
+      <wsdl:input message="tns:PesquisaTelefoneClienteSoapIn" />
+      <wsdl:output message="tns:PesquisaTelefoneClienteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Busca_Dados_Cadastro_ClienteHttpGet">
+    <wsdl:operation name="TipoDocumento">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista Os Tipos de Documentos</wsdl:documentation>
+      <wsdl:input message="tns:TipoDocumentoHttpGetIn" />
+      <wsdl:output message="tns:TipoDocumentoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TipoOrgaoEmissor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista Os Tipos de Orgões Emissor</wsdl:documentation>
+      <wsdl:input message="tns:TipoOrgaoEmissorHttpGetIn" />
+      <wsdl:output message="tns:TipoOrgaoEmissorHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TipoTelefone">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista Os Tipos de Telefones</wsdl:documentation>
+      <wsdl:input message="tns:TipoTelefoneHttpGetIn" />
+      <wsdl:output message="tns:TipoTelefoneHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscaListaUF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista de UF.</wsdl:documentation>
+      <wsdl:input message="tns:BuscaListaUFHttpGetIn" />
+      <wsdl:output message="tns:BuscaListaUFHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PARAMETROS_CADASTRO_CLIENTE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">PESQUISA_PARAMETROS_CADASTRO DE CLIENTE</wsdl:documentation>
+      <wsdl:input message="tns:PARAMETROS_CADASTRO_CLIENTEHttpGetIn" />
+      <wsdl:output message="tns:PARAMETROS_CADASTRO_CLIENTEHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GerarCodCli">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GERA CODCLI NA MV_CAD_CLIENTE</wsdl:documentation>
+      <wsdl:input message="tns:GerarCodCliHttpGetIn" />
+      <wsdl:output message="tns:GerarCodCliHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Pesquisa Dados Cliente Simplificada return = (NOME,RG_IE,CPF_CNP,CODCLIJ)</wsdl:documentation>
+      <wsdl:input message="tns:PesquisaCadastroClienteHttpGetIn" />
+      <wsdl:output message="tns:PesquisaCadastroClienteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroClienteCompleto">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Pesquisa Dados Cliente Completo</wsdl:documentation>
+      <wsdl:input message="tns:PesquisaCadastroClienteCompletoHttpGetIn" />
+      <wsdl:output message="tns:PesquisaCadastroClienteCompletoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaTelefoneCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Pesquisa de Telefone de Cliente.</wsdl:documentation>
+      <wsdl:input message="tns:PesquisaTelefoneClienteHttpGetIn" />
+      <wsdl:output message="tns:PesquisaTelefoneClienteHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Busca_Dados_Cadastro_ClienteHttpPost">
+    <wsdl:operation name="TipoDocumento">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista Os Tipos de Documentos</wsdl:documentation>
+      <wsdl:input message="tns:TipoDocumentoHttpPostIn" />
+      <wsdl:output message="tns:TipoDocumentoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TipoOrgaoEmissor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista Os Tipos de Orgões Emissor</wsdl:documentation>
+      <wsdl:input message="tns:TipoOrgaoEmissorHttpPostIn" />
+      <wsdl:output message="tns:TipoOrgaoEmissorHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TipoTelefone">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista Os Tipos de Telefones</wsdl:documentation>
+      <wsdl:input message="tns:TipoTelefoneHttpPostIn" />
+      <wsdl:output message="tns:TipoTelefoneHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscaListaUF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista de UF.</wsdl:documentation>
+      <wsdl:input message="tns:BuscaListaUFHttpPostIn" />
+      <wsdl:output message="tns:BuscaListaUFHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PARAMETROS_CADASTRO_CLIENTE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">PESQUISA_PARAMETROS_CADASTRO DE CLIENTE</wsdl:documentation>
+      <wsdl:input message="tns:PARAMETROS_CADASTRO_CLIENTEHttpPostIn" />
+      <wsdl:output message="tns:PARAMETROS_CADASTRO_CLIENTEHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GerarCodCli">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GERA CODCLI NA MV_CAD_CLIENTE</wsdl:documentation>
+      <wsdl:input message="tns:GerarCodCliHttpPostIn" />
+      <wsdl:output message="tns:GerarCodCliHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Pesquisa Dados Cliente Simplificada return = (NOME,RG_IE,CPF_CNP,CODCLIJ)</wsdl:documentation>
+      <wsdl:input message="tns:PesquisaCadastroClienteHttpPostIn" />
+      <wsdl:output message="tns:PesquisaCadastroClienteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroClienteCompleto">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Pesquisa Dados Cliente Completo</wsdl:documentation>
+      <wsdl:input message="tns:PesquisaCadastroClienteCompletoHttpPostIn" />
+      <wsdl:output message="tns:PesquisaCadastroClienteCompletoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaTelefoneCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Pesquisa de Telefone de Cliente.</wsdl:documentation>
+      <wsdl:input message="tns:PesquisaTelefoneClienteHttpPostIn" />
+      <wsdl:output message="tns:PesquisaTelefoneClienteHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Busca_Dados_Cadastro_ClienteSoap" type="tns:Busca_Dados_Cadastro_ClienteSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TipoDocumento">
+      <soap:operation soapAction="http://tempuri.org/TipoDocumento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoOrgaoEmissor">
+      <soap:operation soapAction="http://tempuri.org/TipoOrgaoEmissor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoTelefone">
+      <soap:operation soapAction="http://tempuri.org/TipoTelefone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscaListaUF">
+      <soap:operation soapAction="http://tempuri.org/BuscaListaUF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PARAMETROS_CADASTRO_CLIENTE">
+      <soap:operation soapAction="http://tempuri.org/PARAMETROS_CADASTRO_CLIENTE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GerarCodCli">
+      <soap:operation soapAction="http://tempuri.org/GerarCodCli" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroCliente">
+      <soap:operation soapAction="http://tempuri.org/PesquisaCadastroCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroClienteCompleto">
+      <soap:operation soapAction="http://tempuri.org/PesquisaCadastroClienteCompleto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaTelefoneCliente">
+      <soap:operation soapAction="http://tempuri.org/PesquisaTelefoneCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Busca_Dados_Cadastro_ClienteSoap12" type="tns:Busca_Dados_Cadastro_ClienteSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TipoDocumento">
+      <soap12:operation soapAction="http://tempuri.org/TipoDocumento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoOrgaoEmissor">
+      <soap12:operation soapAction="http://tempuri.org/TipoOrgaoEmissor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoTelefone">
+      <soap12:operation soapAction="http://tempuri.org/TipoTelefone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscaListaUF">
+      <soap12:operation soapAction="http://tempuri.org/BuscaListaUF" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PARAMETROS_CADASTRO_CLIENTE">
+      <soap12:operation soapAction="http://tempuri.org/PARAMETROS_CADASTRO_CLIENTE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GerarCodCli">
+      <soap12:operation soapAction="http://tempuri.org/GerarCodCli" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroCliente">
+      <soap12:operation soapAction="http://tempuri.org/PesquisaCadastroCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroClienteCompleto">
+      <soap12:operation soapAction="http://tempuri.org/PesquisaCadastroClienteCompleto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaTelefoneCliente">
+      <soap12:operation soapAction="http://tempuri.org/PesquisaTelefoneCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Busca_Dados_Cadastro_ClienteHttpGet" type="tns:Busca_Dados_Cadastro_ClienteHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="TipoDocumento">
+      <http:operation location="/TipoDocumento" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoOrgaoEmissor">
+      <http:operation location="/TipoOrgaoEmissor" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoTelefone">
+      <http:operation location="/TipoTelefone" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscaListaUF">
+      <http:operation location="/BuscaListaUF" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PARAMETROS_CADASTRO_CLIENTE">
+      <http:operation location="/PARAMETROS_CADASTRO_CLIENTE" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GerarCodCli">
+      <http:operation location="/GerarCodCli" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroCliente">
+      <http:operation location="/PesquisaCadastroCliente" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroClienteCompleto">
+      <http:operation location="/PesquisaCadastroClienteCompleto" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaTelefoneCliente">
+      <http:operation location="/PesquisaTelefoneCliente" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Busca_Dados_Cadastro_ClienteHttpPost" type="tns:Busca_Dados_Cadastro_ClienteHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="TipoDocumento">
+      <http:operation location="/TipoDocumento" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoOrgaoEmissor">
+      <http:operation location="/TipoOrgaoEmissor" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoTelefone">
+      <http:operation location="/TipoTelefone" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscaListaUF">
+      <http:operation location="/BuscaListaUF" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PARAMETROS_CADASTRO_CLIENTE">
+      <http:operation location="/PARAMETROS_CADASTRO_CLIENTE" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GerarCodCli">
+      <http:operation location="/GerarCodCli" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroCliente">
+      <http:operation location="/PesquisaCadastroCliente" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaCadastroClienteCompleto">
+      <http:operation location="/PesquisaCadastroClienteCompleto" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisaTelefoneCliente">
+      <http:operation location="/PesquisaTelefoneCliente" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Busca_Dados_Cadastro_Cliente">
+    <wsdl:port name="Busca_Dados_Cadastro_ClienteSoap" binding="tns:Busca_Dados_Cadastro_ClienteSoap">
+      <soap:address location="http://localhost/wsClinVitta/CadastroCliente.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Busca_Dados_Cadastro_ClienteSoap12" binding="tns:Busca_Dados_Cadastro_ClienteSoap12">
+      <soap12:address location="http://localhost/wsClinVitta/CadastroCliente.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Busca_Dados_Cadastro_ClienteHttpGet" binding="tns:Busca_Dados_Cadastro_ClienteHttpGet">
+      <http:address location="http://localhost/wsClinVitta/CadastroCliente.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Busca_Dados_Cadastro_ClienteHttpPost" binding="tns:Busca_Dados_Cadastro_ClienteHttpPost">
+      <http:address location="http://localhost/wsClinVitta/CadastroCliente.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

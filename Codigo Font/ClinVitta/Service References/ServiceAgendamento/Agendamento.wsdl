@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="PARAMETRO_xxx_WEBSERV">
+        <s:complexType />
+      </s:element>
+      <s:element name="PARAMETRO_xxx_WEBSERVResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PARAMETRO_xxx_WEBSERVResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaAgendamentoCadastrados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pNome" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaAgendamentoCadastradosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaAgendamentoCadastradosResult" type="tns:ArrayOfListaTipoAgendamento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfListaTipoAgendamento">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ListaTipoAgendamento" nillable="true" type="tns:ListaTipoAgendamento" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ListaTipoAgendamento">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NOME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PROCEDIMENTO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MEDICO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DATA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HORA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Cadastro_Agendamento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CODPACIENTE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DATA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HORA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PROCEDIMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OBSERVACAO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Cadastro_AgendamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Cadastro_AgendamentoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Alterar_Agendamento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CODPACIENTE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DATA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HORA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PROCEDIMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OBSERVACAO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Alterar_AgendamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Alterar_AgendamentoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Deletar_Agendamento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Deletar_AgendamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Deletar_AgendamentoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArrayOfListaTipoAgendamento" nillable="true" type="tns:ArrayOfListaTipoAgendamento" />
+      <s:element name="int" type="s:int" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PARAMETRO_xxx_WEBSERVSoapIn">
+    <wsdl:part name="parameters" element="tns:PARAMETRO_xxx_WEBSERV" />
+  </wsdl:message>
+  <wsdl:message name="PARAMETRO_xxx_WEBSERVSoapOut">
+    <wsdl:part name="parameters" element="tns:PARAMETRO_xxx_WEBSERVResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListaAgendamentoCadastradosSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaAgendamentoCadastrados" />
+  </wsdl:message>
+  <wsdl:message name="ListaAgendamentoCadastradosSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaAgendamentoCadastradosResponse" />
+  </wsdl:message>
+  <wsdl:message name="Cadastro_AgendamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:Cadastro_Agendamento" />
+  </wsdl:message>
+  <wsdl:message name="Cadastro_AgendamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:Cadastro_AgendamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Alterar_AgendamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:Alterar_Agendamento" />
+  </wsdl:message>
+  <wsdl:message name="Alterar_AgendamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:Alterar_AgendamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Deletar_AgendamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:Deletar_Agendamento" />
+  </wsdl:message>
+  <wsdl:message name="Deletar_AgendamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:Deletar_AgendamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PARAMETRO_xxx_WEBSERVHttpGetIn" />
+  <wsdl:message name="PARAMETRO_xxx_WEBSERVHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ListaAgendamentoCadastradosHttpGetIn">
+    <wsdl:part name="pNome" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListaAgendamentoCadastradosHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfListaTipoAgendamento" />
+  </wsdl:message>
+  <wsdl:message name="Cadastro_AgendamentoHttpGetIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+    <wsdl:part name="DATA" type="s:string" />
+    <wsdl:part name="HORA" type="s:string" />
+    <wsdl:part name="STATUS" type="s:string" />
+    <wsdl:part name="PROCEDIMENTO" type="s:string" />
+    <wsdl:part name="OBSERVACAO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Cadastro_AgendamentoHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Alterar_AgendamentoHttpGetIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="DATA" type="s:string" />
+    <wsdl:part name="HORA" type="s:string" />
+    <wsdl:part name="STATUS" type="s:string" />
+    <wsdl:part name="PROCEDIMENTO" type="s:string" />
+    <wsdl:part name="OBSERVACAO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Alterar_AgendamentoHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Deletar_AgendamentoHttpGetIn">
+    <wsdl:part name="ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Deletar_AgendamentoHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="PARAMETRO_xxx_WEBSERVHttpPostIn" />
+  <wsdl:message name="PARAMETRO_xxx_WEBSERVHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ListaAgendamentoCadastradosHttpPostIn">
+    <wsdl:part name="pNome" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListaAgendamentoCadastradosHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfListaTipoAgendamento" />
+  </wsdl:message>
+  <wsdl:message name="Cadastro_AgendamentoHttpPostIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+    <wsdl:part name="DATA" type="s:string" />
+    <wsdl:part name="HORA" type="s:string" />
+    <wsdl:part name="STATUS" type="s:string" />
+    <wsdl:part name="PROCEDIMENTO" type="s:string" />
+    <wsdl:part name="OBSERVACAO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Cadastro_AgendamentoHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Alterar_AgendamentoHttpPostIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="DATA" type="s:string" />
+    <wsdl:part name="HORA" type="s:string" />
+    <wsdl:part name="STATUS" type="s:string" />
+    <wsdl:part name="PROCEDIMENTO" type="s:string" />
+    <wsdl:part name="OBSERVACAO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Alterar_AgendamentoHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Deletar_AgendamentoHttpPostIn">
+    <wsdl:part name="ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Deletar_AgendamentoHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:portType name="AgendamentoSoap">
+    <wsdl:operation name="PARAMETRO_xxx_WEBSERV">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">pa</wsdl:documentation>
+      <wsdl:input message="tns:PARAMETRO_xxx_WEBSERVSoapIn" />
+      <wsdl:output message="tns:PARAMETRO_xxx_WEBSERVSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaAgendamentoCadastrados">
+      <wsdl:input message="tns:ListaAgendamentoCadastradosSoapIn" />
+      <wsdl:output message="tns:ListaAgendamentoCadastradosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cadastro_Agendamento">
+      <wsdl:input message="tns:Cadastro_AgendamentoSoapIn" />
+      <wsdl:output message="tns:Cadastro_AgendamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_Agendamento">
+      <wsdl:input message="tns:Alterar_AgendamentoSoapIn" />
+      <wsdl:output message="tns:Alterar_AgendamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Deletar_Agendamento">
+      <wsdl:input message="tns:Deletar_AgendamentoSoapIn" />
+      <wsdl:output message="tns:Deletar_AgendamentoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="AgendamentoHttpGet">
+    <wsdl:operation name="PARAMETRO_xxx_WEBSERV">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">pa</wsdl:documentation>
+      <wsdl:input message="tns:PARAMETRO_xxx_WEBSERVHttpGetIn" />
+      <wsdl:output message="tns:PARAMETRO_xxx_WEBSERVHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaAgendamentoCadastrados">
+      <wsdl:input message="tns:ListaAgendamentoCadastradosHttpGetIn" />
+      <wsdl:output message="tns:ListaAgendamentoCadastradosHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cadastro_Agendamento">
+      <wsdl:input message="tns:Cadastro_AgendamentoHttpGetIn" />
+      <wsdl:output message="tns:Cadastro_AgendamentoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_Agendamento">
+      <wsdl:input message="tns:Alterar_AgendamentoHttpGetIn" />
+      <wsdl:output message="tns:Alterar_AgendamentoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Deletar_Agendamento">
+      <wsdl:input message="tns:Deletar_AgendamentoHttpGetIn" />
+      <wsdl:output message="tns:Deletar_AgendamentoHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="AgendamentoHttpPost">
+    <wsdl:operation name="PARAMETRO_xxx_WEBSERV">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">pa</wsdl:documentation>
+      <wsdl:input message="tns:PARAMETRO_xxx_WEBSERVHttpPostIn" />
+      <wsdl:output message="tns:PARAMETRO_xxx_WEBSERVHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaAgendamentoCadastrados">
+      <wsdl:input message="tns:ListaAgendamentoCadastradosHttpPostIn" />
+      <wsdl:output message="tns:ListaAgendamentoCadastradosHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cadastro_Agendamento">
+      <wsdl:input message="tns:Cadastro_AgendamentoHttpPostIn" />
+      <wsdl:output message="tns:Cadastro_AgendamentoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_Agendamento">
+      <wsdl:input message="tns:Alterar_AgendamentoHttpPostIn" />
+      <wsdl:output message="tns:Alterar_AgendamentoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Deletar_Agendamento">
+      <wsdl:input message="tns:Deletar_AgendamentoHttpPostIn" />
+      <wsdl:output message="tns:Deletar_AgendamentoHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AgendamentoSoap" type="tns:AgendamentoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PARAMETRO_xxx_WEBSERV">
+      <soap:operation soapAction="http://tempuri.org/PARAMETRO_xxx_WEBSERV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaAgendamentoCadastrados">
+      <soap:operation soapAction="http://tempuri.org/ListaAgendamentoCadastrados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cadastro_Agendamento">
+      <soap:operation soapAction="http://tempuri.org/Cadastro_Agendamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_Agendamento">
+      <soap:operation soapAction="http://tempuri.org/Alterar_Agendamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Deletar_Agendamento">
+      <soap:operation soapAction="http://tempuri.org/Deletar_Agendamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AgendamentoSoap12" type="tns:AgendamentoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PARAMETRO_xxx_WEBSERV">
+      <soap12:operation soapAction="http://tempuri.org/PARAMETRO_xxx_WEBSERV" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaAgendamentoCadastrados">
+      <soap12:operation soapAction="http://tempuri.org/ListaAgendamentoCadastrados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cadastro_Agendamento">
+      <soap12:operation soapAction="http://tempuri.org/Cadastro_Agendamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_Agendamento">
+      <soap12:operation soapAction="http://tempuri.org/Alterar_Agendamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Deletar_Agendamento">
+      <soap12:operation soapAction="http://tempuri.org/Deletar_Agendamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AgendamentoHttpGet" type="tns:AgendamentoHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="PARAMETRO_xxx_WEBSERV">
+      <http:operation location="/PARAMETRO_xxx_WEBSERV" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaAgendamentoCadastrados">
+      <http:operation location="/ListaAgendamentoCadastrados" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cadastro_Agendamento">
+      <http:operation location="/Cadastro_Agendamento" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_Agendamento">
+      <http:operation location="/Alterar_Agendamento" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Deletar_Agendamento">
+      <http:operation location="/Deletar_Agendamento" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AgendamentoHttpPost" type="tns:AgendamentoHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="PARAMETRO_xxx_WEBSERV">
+      <http:operation location="/PARAMETRO_xxx_WEBSERV" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaAgendamentoCadastrados">
+      <http:operation location="/ListaAgendamentoCadastrados" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cadastro_Agendamento">
+      <http:operation location="/Cadastro_Agendamento" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_Agendamento">
+      <http:operation location="/Alterar_Agendamento" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Deletar_Agendamento">
+      <http:operation location="/Deletar_Agendamento" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Agendamento">
+    <wsdl:port name="AgendamentoSoap" binding="tns:AgendamentoSoap">
+      <soap:address location="http://localhost/wsClinVitta/Agendamento.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AgendamentoSoap12" binding="tns:AgendamentoSoap12">
+      <soap12:address location="http://localhost/wsClinVitta/Agendamento.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AgendamentoHttpGet" binding="tns:AgendamentoHttpGet">
+      <http:address location="http://localhost/wsClinVitta/Agendamento.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AgendamentoHttpPost" binding="tns:AgendamentoHttpPost">
+      <http:address location="http://localhost/wsClinVitta/Agendamento.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

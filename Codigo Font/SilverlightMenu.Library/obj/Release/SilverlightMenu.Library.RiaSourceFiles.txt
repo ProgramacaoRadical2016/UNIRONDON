@@ -1,0 +1,1 @@
+C:\campeonato\programacaoradical\ClinVitta\ClinVitta.Web\ClinVitta.Web.csproj,636145606491777937,Properties\AssemblyInfo.cs,

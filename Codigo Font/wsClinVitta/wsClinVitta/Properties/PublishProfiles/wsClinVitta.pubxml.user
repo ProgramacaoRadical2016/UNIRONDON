@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Alessandro\Desktop\clinVitta</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AutenticaUsuario.asmx">
+      <publishTime>11/12/2016 15:24:00</publishTime>
+    </File>
+    <File Include="bin/mysql.data.dll">
+      <publishTime>04/16/2016 11:37:50</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/12/2016 15:22:41</publishTime>
+    </File>
+    <File Include="bin/wsClinVitta.dll">
+      <publishTime>11/12/2016 15:10:33</publishTime>
+    </File>
+    <File Include="CadastroCliente.asmx">
+      <publishTime>11/12/2016 14:57:29</publishTime>
+    </File>
+    <File Include="ControleCadastroUsuarios.asmx">
+      <publishTime>11/12/2016 14:39:24</publishTime>
+    </File>
+    <File Include="ControledeLogException.asmx">
+      <publishTime>11/12/2016 15:21:04</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/12/2016 15:22:45</publishTime>
+    </File>
+    <File Include="PesquisaCEP.asmx">
+      <publishTime>11/12/2016 14:29:42</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>11/12/2016 15:10:34</publishTime>
+    </File>
+    <File Include="RetornaDataHora.asmx">
+      <publishTime>11/12/2016 14:36:19</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.intellisense.js">
+      <publishTime>11/12/2016 15:20:19</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.js">
+      <publishTime>11/12/2016 15:20:19</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.min.js">
+      <publishTime>11/12/2016 15:20:19</publishTime>
+    </File>
+    <File Include="Service References/ServiceAPICorreios/wsClinVitta.ServiceAPICorreios.assuntoPIMaster.datasource">
+      <publishTime>11/12/2016 14:38:41</publishTime>
+    </File>
+    <File Include="Service References/ServiceAPICorreios/wsClinVitta.ServiceAPICorreios.clienteERP.datasource">
+      <publishTime>11/12/2016 14:38:41</publishTime>
+    </File>
+    <File Include="Service References/ServiceAPICorreios/wsClinVitta.ServiceAPICorreios.contratoERP.datasource">
+      <publishTime>11/12/2016 14:38:41</publishTime>
+    </File>
+    <File Include="Service References/ServiceAPICorreios/wsClinVitta.ServiceAPICorreios.embalagemLRSMaster.datasource">
+      <publishTime>11/12/2016 14:38:41</publishTime>
+    </File>
+    <File Include="Service References/ServiceAPICorreios/wsClinVitta.ServiceAPICorreios.enderecoERP.datasource">
+      <publishTime>11/12/2016 14:38:41</publishTime>
+    </File>
+    <File Include="Service References/ServiceAPICorreios/wsClinVitta.ServiceAPICorreios.mensagemRetornoPIMaster.datasource">
+      <publishTime>11/12/2016 14:38:41</publishTime>
+    </File>
+    <File Include="Service References/ServiceAPICorreios/wsClinVitta.ServiceAPICorreios.motivoPIMaster.datasource">
+      <publishTime>11/12/2016 14:38:41</publishTime>
+    </File>
+    <File Include="Service References/ServiceAPICorreios/wsClinVitta.ServiceAPICorreios.retorno.datasource">
+      <publishTime>11/12/2016 14:38:41</publishTime>
+    </File>
+    <File Include="Service References/ServiceAPICorreios/wsClinVitta.ServiceAPICorreios.retornoCancelamentoTO.datasource">
+      <publishTime>11/12/2016 14:38:41</publishTime>
+    </File>
+    <File Include="Service References/ServiceAPICorreios/wsClinVitta.ServiceAPICorreios.servicoERP.datasource">
+      <publishTime>11/12/2016 14:38:41</publishTime>
+    </File>
+    <File Include="Service References/ServiceAPICorreios/wsClinVitta.ServiceAPICorreios.statusCartao.datasource">
+      <publishTime>11/12/2016 14:38:41</publishTime>
+    </File>
+    <File Include="Service References/ServiceAPICorreios/wsClinVitta.ServiceAPICorreios.statusPlp.datasource">
+      <publishTime>11/12/2016 14:38:41</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/12/2016 15:10:33</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

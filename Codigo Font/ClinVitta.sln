@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinVitta", "ClinVitta\ClinVitta.csproj", "{183B34D7-3345-4879-AC83-EFD5AA9C3998}"
+	ProjectSection(ProjectDependencies) = postProject
+		{895AADFA-3BB2-4793-B879-FABB38874335} = {895AADFA-3BB2-4793-B879-FABB38874335}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinVitta.Web", "ClinVitta.Web\ClinVitta.Web.csproj", "{895AADFA-3BB2-4793-B879-FABB38874335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightMenu.Library", "SilverlightMenu.Library\SilverlightMenu.Library.csproj", "{86DAFB83-AF89-43FE-B170-500975C2E7F3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{895AADFA-3BB2-4793-B879-FABB38874335} = {895AADFA-3BB2-4793-B879-FABB38874335}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{183B34D7-3345-4879-AC83-EFD5AA9C3998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183B34D7-3345-4879-AC83-EFD5AA9C3998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183B34D7-3345-4879-AC83-EFD5AA9C3998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183B34D7-3345-4879-AC83-EFD5AA9C3998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{895AADFA-3BB2-4793-B879-FABB38874335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895AADFA-3BB2-4793-B879-FABB38874335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895AADFA-3BB2-4793-B879-FABB38874335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895AADFA-3BB2-4793-B879-FABB38874335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86DAFB83-AF89-43FE-B170-500975C2E7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86DAFB83-AF89-43FE-B170-500975C2E7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86DAFB83-AF89-43FE-B170-500975C2E7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86DAFB83-AF89-43FE-B170-500975C2E7F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

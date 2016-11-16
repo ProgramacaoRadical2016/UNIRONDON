@@ -1,0 +1,11 @@
+C:\campeonato\programacaoradical\ClinVitta\ClinVitta.Web\bin\ClinVitta.Web.dll.config
+C:\campeonato\programacaoradical\ClinVitta\ClinVitta.Web\bin\ClinVitta.Web.dll
+C:\campeonato\programacaoradical\ClinVitta\ClinVitta.Web\bin\ClinVitta.Web.pdb
+C:\campeonato\programacaoradical\ClinVitta\ClinVitta.Web\obj\Debug\ClinVitta.Web.csprojResolveAssemblyReference.cache
+C:\campeonato\programacaoradical\ClinVitta\ClinVitta.Web\obj\Debug\ClinVitta.Web.dll
+C:\campeonato\programacaoradical\ClinVitta\ClinVitta.Web\obj\Debug\ClinVitta.Web.pdb
+C:\inetpub\HML\ClinVitta\ClinVitta.Web\bin\ClinVitta.Web.dll.config
+C:\inetpub\HML\ClinVitta\ClinVitta.Web\bin\ClinVitta.Web.dll
+C:\inetpub\HML\ClinVitta\ClinVitta.Web\bin\ClinVitta.Web.pdb
+C:\inetpub\HML\ClinVitta\ClinVitta.Web\obj\Debug\ClinVitta.Web.dll
+C:\inetpub\HML\ClinVitta\ClinVitta.Web\obj\Debug\ClinVitta.Web.pdb

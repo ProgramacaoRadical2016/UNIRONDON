@@ -1,0 +1,59 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="ControledeLogExceptionSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="AutenticaUsuarioSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="Retorna_Data_HoraSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="PesquisaCEPSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="Busca_Dados_Cadastro_ClienteSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="ControleDb_CadastroClienteSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="AgendamentoSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="../../wsClinVitta/Agendamento.asmx" binding="basicHttpBinding"
+                bindingConfiguration="AgendamentoSoap" contract="ServiceAgendamento.AgendamentoSoap"
+                name="AgendamentoSoap" />
+            <endpoint address="../../wsClinVitta/CadastroCliente.asmx" binding="basicHttpBinding"
+                bindingConfiguration="Busca_Dados_Cadastro_ClienteSoap" contract="ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap"
+                name="Busca_Dados_Cadastro_ClienteSoap" />
+            <endpoint address="../../wsClinVitta/PesquisaCEP.asmx" binding="basicHttpBinding"
+                bindingConfiguration="PesquisaCEPSoap" contract="ServiceCEP.PesquisaCEPSoap"
+                name="PesquisaCEPSoap" />
+            <endpoint address="../../wsClinVitta/ControleDb_CadastroCliente.asmx"
+                binding="basicHttpBinding" bindingConfiguration="ControleDb_CadastroClienteSoap"
+                contract="ServiceControleCadCliente.ControleDb_CadastroClienteSoap"
+                name="ControleDb_CadastroClienteSoap" />
+            <endpoint address="../../wsClinVitta/ControledeLogException.asmx"
+                binding="basicHttpBinding" bindingConfiguration="ControledeLogExceptionSoap"
+                contract="ServiceControledeLogErro.ControledeLogExceptionSoap"
+                name="ControledeLogExceptionSoap" />
+            <endpoint address="../../wsClinVitta/RetornaDataHora.asmx" binding="basicHttpBinding"
+                bindingConfiguration="Retorna_Data_HoraSoap" contract="ServiceDataHora.Retorna_Data_HoraSoap"
+                name="Retorna_Data_HoraSoap" />
+            <endpoint address="../../wsClinVitta/AutenticaUsuario.asmx" binding="basicHttpBinding"
+                bindingConfiguration="AutenticaUsuarioSoap" contract="ServiceUsuario.AutenticaUsuarioSoap"
+                name="AutenticaUsuarioSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>

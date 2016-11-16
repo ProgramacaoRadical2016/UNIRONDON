@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RetornaDataHoraServidor_MySql">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Tipo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaDataHoraServidor_MySqlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornaDataHoraServidor_MySqlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RetornaDataHoraServidor_MySqlSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornaDataHoraServidor_MySql" />
+  </wsdl:message>
+  <wsdl:message name="RetornaDataHoraServidor_MySqlSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornaDataHoraServidor_MySqlResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetornaDataHoraServidor_MySqlHttpGetIn">
+    <wsdl:part name="Tipo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RetornaDataHoraServidor_MySqlHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RetornaDataHoraServidor_MySqlHttpPostIn">
+    <wsdl:part name="Tipo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RetornaDataHoraServidor_MySqlHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="Retorna_Data_HoraSoap">
+    <wsdl:operation name="RetornaDataHoraServidor_MySql">
+      <wsdl:input message="tns:RetornaDataHoraServidor_MySqlSoapIn" />
+      <wsdl:output message="tns:RetornaDataHoraServidor_MySqlSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Retorna_Data_HoraHttpGet">
+    <wsdl:operation name="RetornaDataHoraServidor_MySql">
+      <wsdl:input message="tns:RetornaDataHoraServidor_MySqlHttpGetIn" />
+      <wsdl:output message="tns:RetornaDataHoraServidor_MySqlHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Retorna_Data_HoraHttpPost">
+    <wsdl:operation name="RetornaDataHoraServidor_MySql">
+      <wsdl:input message="tns:RetornaDataHoraServidor_MySqlHttpPostIn" />
+      <wsdl:output message="tns:RetornaDataHoraServidor_MySqlHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Retorna_Data_HoraSoap" type="tns:Retorna_Data_HoraSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RetornaDataHoraServidor_MySql">
+      <soap:operation soapAction="http://tempuri.org/RetornaDataHoraServidor_MySql" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Retorna_Data_HoraSoap12" type="tns:Retorna_Data_HoraSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RetornaDataHoraServidor_MySql">
+      <soap12:operation soapAction="http://tempuri.org/RetornaDataHoraServidor_MySql" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Retorna_Data_HoraHttpGet" type="tns:Retorna_Data_HoraHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="RetornaDataHoraServidor_MySql">
+      <http:operation location="/RetornaDataHoraServidor_MySql" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Retorna_Data_HoraHttpPost" type="tns:Retorna_Data_HoraHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="RetornaDataHoraServidor_MySql">
+      <http:operation location="/RetornaDataHoraServidor_MySql" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Retorna_Data_Hora">
+    <wsdl:port name="Retorna_Data_HoraSoap" binding="tns:Retorna_Data_HoraSoap">
+      <soap:address location="http://localhost/wsClinVitta/RetornaDataHora.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Retorna_Data_HoraSoap12" binding="tns:Retorna_Data_HoraSoap12">
+      <soap12:address location="http://localhost/wsClinVitta/RetornaDataHora.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Retorna_Data_HoraHttpGet" binding="tns:Retorna_Data_HoraHttpGet">
+      <http:address location="http://localhost/wsClinVitta/RetornaDataHora.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Retorna_Data_HoraHttpPost" binding="tns:Retorna_Data_HoraHttpPost">
+      <http:address location="http://localhost/wsClinVitta/RetornaDataHora.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

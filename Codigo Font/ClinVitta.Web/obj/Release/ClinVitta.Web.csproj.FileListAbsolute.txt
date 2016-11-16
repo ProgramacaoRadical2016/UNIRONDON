@@ -1,0 +1,5 @@
+C:\campeonato\programacaoradical\ClinVitta\ClinVitta.Web\bin\ClinVitta.Web.dll.config
+C:\campeonato\programacaoradical\ClinVitta\ClinVitta.Web\bin\ClinVitta.Web.dll
+C:\campeonato\programacaoradical\ClinVitta\ClinVitta.Web\bin\ClinVitta.Web.pdb
+C:\campeonato\programacaoradical\ClinVitta\ClinVitta.Web\obj\Release\ClinVitta.Web.dll
+C:\campeonato\programacaoradical\ClinVitta\ClinVitta.Web\obj\Release\ClinVitta.Web.pdb

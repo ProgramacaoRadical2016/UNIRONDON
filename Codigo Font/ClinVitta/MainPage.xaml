@@ -1,0 +1,62 @@
+﻿<UserControl
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+   xmlns:l="clr-namespace:SilverlightMenu.Library;assembly=SilverlightMenu.Library"  
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" x:Class="ClinVitta.MainPage"  
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <UserControl.Resources>
+        <l:MenuItem x:Key="mnuRoot" Name="mnuRoot">
+            <l:MenuItem Name="mnuInicio" Text="Inicio">
+                <l:MenuItem Name="mnuCadCliente" Text="Controle de Paciente"/>
+                <l:MenuItem Name="mnuCadArquivo14" Text="Agendamento"/>
+            </l:MenuItem>
+            <l:MenuItem Name="mnuProcessos" Text="Movimentação">
+                <l:MenuItem Name="mnuAgendamento" Text="Agendamento"/>
+                <l:MenuItem Name="mnuBI" Text="Prontuario Eletrônico"/>
+            </l:MenuItem>
+            <l:MenuItem Name="mnuRelatorios" Text="Relatórios">
+                <l:MenuItem Name="mnuAgendamento1" Text="Agendamento"/>
+                <l:MenuItem Name="mnudRelatorio2" Text="Prontuario Eletrônico"/>
+            </l:MenuItem>
+            <l:MenuItem Name="mnuSobreMenu" Text="Sobre">
+                <l:MenuItem Name="mnuTrocarSenha" Text="Alterar Senha"/>
+            </l:MenuItem>
+            <l:MenuItem Name="mnuSairMenu" Text="Sair">
+                <l:MenuItem Name="mnuSair" Text="Sair do Sistema"/>
+            </l:MenuItem>
+        </l:MenuItem>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                <GradientStop Color="#FFD6DCE0" />
+                <GradientStop Color="#FFD6DCE0" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <toolkit:BusyIndicator HorizontalAlignment="Center" VerticalAlignment="Top" x:Name="biCarregando" BusyContent="Aguarde, processando!"/>
+
+        <Grid>
+
+            <l:Menu 
+				x:Name="mnuTop"             
+				BorderBrush="#FFC0C0C0"
+				TopPanelBrush="White"
+				ImageBackgroundBrush="#FFC0C0C0"
+				FocusBrush="#FFE0E0D0"
+				FocusBorderBrush="#FFC0C0C0"
+				Foreground="Black"
+				Background="White"
+				MenuItem="{StaticResource mnuRoot}" 
+				MenuItemClicked="Menu_MenuItemClicked" Loaded="mnuTop_Loaded" Margin="0,0,0,-3">
+            </l:Menu>
+            <Image Margin="92,97,77,80" Source="imagens/LOGOSISTEMA.png" Opacity="0.7" MaxHeight="500" MaxWidth="500"/>
+        </Grid>
+    </Grid>
+
+</UserControl>

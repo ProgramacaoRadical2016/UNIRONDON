@@ -1,0 +1,31 @@
+﻿<controls:ChildWindow x:Class="ClinVitta.FrmExcecao"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+           Width="700" Height="450" 
+           Title="Erro de aplicativo">
+    <toolkit:BusyIndicator HorizontalAlignment="Center" VerticalAlignment="Top" Name="biCarregando" BusyContent="Aguarde, Processando informações!">
+        <Grid x:Name="LayoutRoot">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,83,0">
+                    <TextBlock FontSize="13" FontWeight="Bold" Text="Uma exceção foi encontrada.." />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,76,0">
+                    <TextBlock x:Name="tbMensagem" FontStyle="italic" TextWrapping="Wrap" Text="" Height="30" Width="600" Foreground="#FF7E0606" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <toolkit:Expander Height="318" Header="Mais informações" IsExpanded="True" VerticalAlignment="Top">
+                        <toolkit:Expander.Content>
+                            <TextBox x:Name="txtDetalhe" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" VerticalAlignment="Top" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Auto" Text="" Width="682" Height="295" Background="White" IsReadOnly="True" />
+                        </toolkit:Expander.Content>
+                    </toolkit:Expander>
+                </StackPanel>
+                <StackPanel Margin="0,10,0,0" HorizontalAlignment="Right">
+                    <Button x:Name="btnSair" Click="btnSair_Click" Content="Sair" Height="23" Width="50" />
+                </StackPanel>
+            </StackPanel>
+            <Image Margin="604,-3,1,335" Source="imagens/1445302507_Html.png"/>
+        </Grid>
+    </toolkit:BusyIndicator>
+</controls:ChildWindow>

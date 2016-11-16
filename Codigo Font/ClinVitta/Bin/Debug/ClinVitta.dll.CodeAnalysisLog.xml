@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="C:\inetpub\HML\ClinVitta\ClinVitta\Bin\Debug\ClinVitta.dll">
+   <Modules>
+    <Module Name="clinvitta.dll">
+     <Namespaces>
+      <Namespace Name="ClinVitta.ServiceAgendamento">
+       <Types>
+        <Type Name="AgendamentoSoapClient" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClinVitta.ServiceAgendamento.AgendamentoSoap.BeginAlterar_Agendamento(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceAgendamento" File="Reference.cs" Line="557">Make 'AgendamentoSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AgendamentoSoap.BeginAlterar_Agendamento(string, string, string, string, string, string, string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceAgendamento.AgendamentoSoap.BeginCadastro_Agendamento(System.String,System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceAgendamento" File="Reference.cs" Line="501">Make 'AgendamentoSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AgendamentoSoap.BeginCadastro_Agendamento(string, string, string, string, string, string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceAgendamento.AgendamentoSoap.BeginDeletar_Agendamento(System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceAgendamento" File="Reference.cs" Line="615">Make 'AgendamentoSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AgendamentoSoap.BeginDeletar_Agendamento(string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceAgendamento.AgendamentoSoap.BeginListaAgendamentoCadastrados(System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceAgendamento" File="Reference.cs" Line="455">Make 'AgendamentoSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AgendamentoSoap.BeginListaAgendamentoCadastrados(string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceAgendamento.AgendamentoSoap.BeginPARAMETRO_xxx_WEBSERV(System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceAgendamento" File="Reference.cs" Line="411">Make 'AgendamentoSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AgendamentoSoap.BeginPARAMETRO_xxx_WEBSERV(AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceAgendamento.AgendamentoSoap.EndAlterar_Agendamento(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceAgendamento" File="Reference.cs" Line="562">Make 'AgendamentoSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AgendamentoSoap.EndAlterar_Agendamento(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceAgendamento.AgendamentoSoap.EndCadastro_Agendamento(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceAgendamento" File="Reference.cs" Line="506">Make 'AgendamentoSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AgendamentoSoap.EndCadastro_Agendamento(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceAgendamento.AgendamentoSoap.EndDeletar_Agendamento(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceAgendamento" File="Reference.cs" Line="620">Make 'AgendamentoSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AgendamentoSoap.EndDeletar_Agendamento(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceAgendamento.AgendamentoSoap.EndListaAgendamentoCadastrados(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceAgendamento" File="Reference.cs" Line="460">Make 'AgendamentoSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AgendamentoSoap.EndListaAgendamentoCadastrados(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceAgendamento.AgendamentoSoap.EndPARAMETRO_xxx_WEBSERV(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceAgendamento" File="Reference.cs" Line="416">Make 'AgendamentoSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AgendamentoSoap.EndPARAMETRO_xxx_WEBSERV(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="ClinVitta.ServiceCadastroCliente">
+       <Types>
+        <Type Name="Busca_Dados_Cadastro_ClienteSoapClient" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.BeginBuscaListaUF(System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1593">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.BeginBuscaListaUF(AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.BeginGerarCodCli(System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1681">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.BeginGerarCodCli(AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.BeginPARAMETROS_CADASTRO_CLIENTE(System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1637">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.BeginPARAMETROS_CADASTRO_CLIENTE(AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.BeginPesquisaCadastroCliente(System.String,System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1725">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.BeginPesquisaCadastroCliente(string, string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.BeginPesquisaCadastroClienteCompleto(System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1773">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.BeginPesquisaCadastroClienteCompleto(string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.BeginPesquisaTelefoneCliente(System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1819">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.BeginPesquisaTelefoneCliente(string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.BeginTipoDocumento(System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1461">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.BeginTipoDocumento(AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.BeginTipoOrgaoEmissor(System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1505">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.BeginTipoOrgaoEmissor(AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.BeginTipoTelefone(System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1549">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.BeginTipoTelefone(AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.EndBuscaListaUF(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1598">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.EndBuscaListaUF(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.EndGerarCodCli(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1686">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.EndGerarCodCli(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.EndPARAMETROS_CADASTRO_CLIENTE(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1642">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.EndPARAMETROS_CADASTRO_CLIENTE(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.EndPesquisaCadastroCliente(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1730">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.EndPesquisaCadastroCliente(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.EndPesquisaCadastroClienteCompleto(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1778">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.EndPesquisaCadastroClienteCompleto(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.EndPesquisaTelefoneCliente(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1824">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.EndPesquisaTelefoneCliente(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.EndTipoDocumento(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1466">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.EndTipoDocumento(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.EndTipoOrgaoEmissor(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1510">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.EndTipoOrgaoEmissor(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCadastroCliente.Busca_Dados_Cadastro_ClienteSoap.EndTipoTelefone(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCadastroCliente" File="Reference.cs" Line="1554">Make 'Busca_Dados_Cadastro_ClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Busca_Dados_Cadastro_ClienteSoap.EndTipoTelefone(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="ClinVitta.ServiceCEP">
+       <Types>
+        <Type Name="PesquisaCEPSoapClient" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClinVitta.ServiceCEP.PesquisaCEPSoap.BeginBuscarCEP(System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCEP" File="Reference.cs" Line="121">Make 'PesquisaCEPSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'PesquisaCEPSoap.BeginBuscarCEP(string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceCEP.PesquisaCEPSoap.EndBuscarCEP(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceCEP" File="Reference.cs" Line="126">Make 'PesquisaCEPSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'PesquisaCEPSoap.EndBuscarCEP(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="ClinVitta.ServiceControleCadCliente">
+       <Types>
+        <Type Name="ControleDb_CadastroClienteSoapClient" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClinVitta.ServiceControleCadCliente.ControleDb_CadastroClienteSoap.BeginAlterar_TELEFONE(System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControleCadCliente" File="Reference.cs" Line="786">Make 'ControleDb_CadastroClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControleDb_CadastroClienteSoap.BeginAlterar_TELEFONE(string, string, string, string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControleCadCliente.ControleDb_CadastroClienteSoap.BeginAlterarCadastroClienteCabecalho(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControleCadCliente" File="Reference.cs" Line="536">Make 'ControleDb_CadastroClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControleDb_CadastroClienteSoap.BeginAlterarCadastroClienteCabecalho(string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControleCadCliente.ControleDb_CadastroClienteSoap.BeginEXCLUIR_TELEFONE(System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControleCadCliente" File="Reference.cs" Line="838">Make 'ControleDb_CadastroClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControleDb_CadastroClienteSoap.BeginEXCLUIR_TELEFONE(string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControleCadCliente.ControleDb_CadastroClienteSoap.BeginExcluirCadastroCliente(System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControleCadCliente" File="Reference.cs" Line="689">Make 'ControleDb_CadastroClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControleDb_CadastroClienteSoap.BeginExcluirCadastroCliente(string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControleCadCliente.ControleDb_CadastroClienteSoap.Beginincluir_TELEFONE(System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControleCadCliente" File="Reference.cs" Line="734">Make 'ControleDb_CadastroClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControleDb_CadastroClienteSoap.Beginincluir_TELEFONE(string, string, string, string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControleCadCliente.ControleDb_CadastroClienteSoap.BeginIncluirCadastroClienteCabecalho(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControleCadCliente" File="Reference.cs" Line="354">Make 'ControleDb_CadastroClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControleDb_CadastroClienteSoap.BeginIncluirCadastroClienteCabecalho(string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControleCadCliente.ControleDb_CadastroClienteSoap.EndAlterar_TELEFONE(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControleCadCliente" File="Reference.cs" Line="791">Make 'ControleDb_CadastroClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControleDb_CadastroClienteSoap.EndAlterar_TELEFONE(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControleCadCliente.ControleDb_CadastroClienteSoap.EndAlterarCadastroClienteCabecalho(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControleCadCliente" File="Reference.cs" Line="541">Make 'ControleDb_CadastroClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControleDb_CadastroClienteSoap.EndAlterarCadastroClienteCabecalho(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControleCadCliente.ControleDb_CadastroClienteSoap.EndEXCLUIR_TELEFONE(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControleCadCliente" File="Reference.cs" Line="843">Make 'ControleDb_CadastroClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControleDb_CadastroClienteSoap.EndEXCLUIR_TELEFONE(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControleCadCliente.ControleDb_CadastroClienteSoap.EndExcluirCadastroCliente(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControleCadCliente" File="Reference.cs" Line="694">Make 'ControleDb_CadastroClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControleDb_CadastroClienteSoap.EndExcluirCadastroCliente(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControleCadCliente.ControleDb_CadastroClienteSoap.Endincluir_TELEFONE(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControleCadCliente" File="Reference.cs" Line="739">Make 'ControleDb_CadastroClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControleDb_CadastroClienteSoap.Endincluir_TELEFONE(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControleCadCliente.ControleDb_CadastroClienteSoap.EndIncluirCadastroClienteCabecalho(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControleCadCliente" File="Reference.cs" Line="359">Make 'ControleDb_CadastroClienteSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControleDb_CadastroClienteSoap.EndIncluirCadastroClienteCabecalho(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="ClinVitta.ServiceControledeLogErro">
+       <Types>
+        <Type Name="ControledeLogExceptionSoapClient" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClinVitta.ServiceControledeLogErro.ControledeLogExceptionSoap.BeginGravaLog(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControledeLogErro" File="Reference.cs" Line="370">Make 'ControledeLogExceptionSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControledeLogExceptionSoap.BeginGravaLog(string, string, string, string, string, string, string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControledeLogErro.ControledeLogExceptionSoap.BeginListaLogsAplicacoes(System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControledeLogErro" File="Reference.cs" Line="427">Make 'ControledeLogExceptionSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControledeLogExceptionSoap.BeginListaLogsAplicacoes(string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControledeLogErro.ControledeLogExceptionSoap.BeginPARAMETRO_xxx_WEBSERV(System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControledeLogErro" File="Reference.cs" Line="326">Make 'ControledeLogExceptionSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControledeLogExceptionSoap.BeginPARAMETRO_xxx_WEBSERV(AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControledeLogErro.ControledeLogExceptionSoap.EndGravaLog(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControledeLogErro" File="Reference.cs" Line="375">Make 'ControledeLogExceptionSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControledeLogExceptionSoap.EndGravaLog(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControledeLogErro.ControledeLogExceptionSoap.EndListaLogsAplicacoes(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControledeLogErro" File="Reference.cs" Line="432">Make 'ControledeLogExceptionSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControledeLogExceptionSoap.EndListaLogsAplicacoes(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceControledeLogErro.ControledeLogExceptionSoap.EndPARAMETRO_xxx_WEBSERV(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceControledeLogErro" File="Reference.cs" Line="331">Make 'ControledeLogExceptionSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'ControledeLogExceptionSoap.EndPARAMETRO_xxx_WEBSERV(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="ClinVitta.ServiceDataHora">
+       <Types>
+        <Type Name="Retorna_Data_HoraSoapClient" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClinVitta.ServiceDataHora.Retorna_Data_HoraSoap.BeginRetornaDataHoraServidor_MySql(System.Int32,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceDataHora" File="Reference.cs" Line="121">Make 'Retorna_Data_HoraSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Retorna_Data_HoraSoap.BeginRetornaDataHoraServidor_MySql(int, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceDataHora.Retorna_Data_HoraSoap.EndRetornaDataHoraServidor_MySql(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceDataHora" File="Reference.cs" Line="126">Make 'Retorna_Data_HoraSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'Retorna_Data_HoraSoap.EndRetornaDataHoraServidor_MySql(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="ClinVitta.ServiceUsuario">
+       <Types>
+        <Type Name="AutenticaUsuarioSoapClient" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClinVitta.ServiceUsuario.AutenticaUsuarioSoap.BeginBuscaUsuario(System.String,System.String,System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceUsuario" File="Reference.cs" Line="361">Make 'AutenticaUsuarioSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AutenticaUsuarioSoap.BeginBuscaUsuario(string, string, string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceUsuario.AutenticaUsuarioSoap.BeginPARAMETRO_xxx_WEBSERV(System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceUsuario" File="Reference.cs" Line="317">Make 'AutenticaUsuarioSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AutenticaUsuarioSoap.BeginPARAMETRO_xxx_WEBSERV(AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceUsuario.AutenticaUsuarioSoap.BeginValidaToken(System.String,System.String,System.AsyncCallback,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceUsuario" File="Reference.cs" Line="411">Make 'AutenticaUsuarioSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AutenticaUsuarioSoap.BeginValidaToken(string, string, AsyncCallback, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceUsuario.AutenticaUsuarioSoap.EndBuscaUsuario(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceUsuario" File="Reference.cs" Line="366">Make 'AutenticaUsuarioSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AutenticaUsuarioSoap.EndBuscaUsuario(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceUsuario.AutenticaUsuarioSoap.EndPARAMETRO_xxx_WEBSERV(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceUsuario" File="Reference.cs" Line="322">Make 'AutenticaUsuarioSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AutenticaUsuarioSoap.EndPARAMETRO_xxx_WEBSERV(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClinVitta.ServiceUsuario.AutenticaUsuarioSoap.EndValidaToken(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-11-12 17:05:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\inetpub\HML\ClinVitta\ClinVitta\Service References\ServiceUsuario" File="Reference.cs" Line="416">Make 'AutenticaUsuarioSoapClient' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'AutenticaUsuarioSoap.EndValidaToken(IAsyncResult)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033">
+   <Name>Interface methods should be callable by child types</Name>
+   <Description>Explicit method implementations are defined with private accessibility. Classes that derive from classes with explicit method implementations and choose to re-declare them on the class will not be able to call into the base class implementation unless the base class has provided an alternate method with appropriate accessibility. When overriding a base class method that has been hidden by explicit interface implementation, in order to call into the base class implementation, a derived class must cast the base pointer to the relevant interface. When calling through this reference, however, the derived class implementation will actually be invoked, resulting in recursion and an eventual stack overflow.</Description>
+   <Resolution Name="Default">Make {0} sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of {1} and is visible to derived classes.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182153.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

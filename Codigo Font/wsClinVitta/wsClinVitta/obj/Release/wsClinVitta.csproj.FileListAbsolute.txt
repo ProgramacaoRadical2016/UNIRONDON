@@ -1,0 +1,8 @@
+C:\campeonato\programacaoradical\ClinVitta\wsClinVitta\wsClinVitta\bin\wsClinVitta.dll.config
+C:\campeonato\programacaoradical\ClinVitta\wsClinVitta\wsClinVitta\bin\wsClinVitta.dll
+C:\campeonato\programacaoradical\ClinVitta\wsClinVitta\wsClinVitta\bin\wsClinVitta.pdb
+C:\campeonato\programacaoradical\ClinVitta\wsClinVitta\wsClinVitta\bin\mysql.data.dll
+C:\campeonato\programacaoradical\ClinVitta\wsClinVitta\wsClinVitta\bin\Newtonsoft.Json.dll
+C:\campeonato\programacaoradical\ClinVitta\wsClinVitta\wsClinVitta\bin\Newtonsoft.Json.xml
+C:\campeonato\programacaoradical\ClinVitta\wsClinVitta\wsClinVitta\obj\Release\wsClinVitta.dll
+C:\campeonato\programacaoradical\ClinVitta\wsClinVitta\wsClinVitta\obj\Release\wsClinVitta.pdb

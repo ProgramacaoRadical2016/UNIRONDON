@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="IncluirCadastroClienteCabecalho">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CODPACIENTE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CPF" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RG" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EMISSOR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UF_EMISSAO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SEXO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ESTADO_CIVIL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOME_MAE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOME_PAI" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UF" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CIDADE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DT_EMISSAO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BAIRRO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PONTO_REFERENCIA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPO_LOGRADOURO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="END_NUM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DESC_LOGRADOURO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="USER_CADASTRO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EMAIL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPO_DOC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="QT_DEPENDENTES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FILIAL_CAD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DATA_NASCIMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PROFISSAO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CEP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DTCADASTRO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IncluirCadastroClienteCabecalhoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IncluirCadastroClienteCabecalhoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarCadastroClienteCabecalho">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CODPACIENTE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CPF" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RG" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EMISSOR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UF_EMISSAO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SEXO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ESTADO_CIVIL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOME_MAE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOME_PAI" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UF" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CIDADE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DT_EMISSAO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BAIRRO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PONTO_REFERENCIA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPO_LOGRADOURO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="END_NUM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DESC_LOGRADOURO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="USER_CADASTRO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EMAIL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPO_DOC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="QT_DEPENDENTES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FILIAL_CAD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DATA_NASCIMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PROFISSAO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CEP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DTCADASTRO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarCadastroClienteCabecalhoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AlterarCadastroClienteCabecalhoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluirCadastroCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CODPACIENTE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluirCadastroClienteResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="incluir_TELEFONE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TELCODPACIENTE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DDD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMERO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="incluir_TELEFONEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="incluir_TELEFONEResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Alterar_TELEFONE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CODPACIENTE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DDD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMERO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Alterar_TELEFONEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Alterar_TELEFONEResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EXCLUIR_TELEFONE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CODPACIENTE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EXCLUIR_TELEFONEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EXCLUIR_TELEFONEResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="int" type="s:int" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="IncluirCadastroClienteCabecalhoSoapIn">
+    <wsdl:part name="parameters" element="tns:IncluirCadastroClienteCabecalho" />
+  </wsdl:message>
+  <wsdl:message name="IncluirCadastroClienteCabecalhoSoapOut">
+    <wsdl:part name="parameters" element="tns:IncluirCadastroClienteCabecalhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AlterarCadastroClienteCabecalhoSoapIn">
+    <wsdl:part name="parameters" element="tns:AlterarCadastroClienteCabecalho" />
+  </wsdl:message>
+  <wsdl:message name="AlterarCadastroClienteCabecalhoSoapOut">
+    <wsdl:part name="parameters" element="tns:AlterarCadastroClienteCabecalhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcluirCadastroClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcluirCadastroCliente" />
+  </wsdl:message>
+  <wsdl:message name="ExcluirCadastroClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcluirCadastroClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="incluir_TELEFONESoapIn">
+    <wsdl:part name="parameters" element="tns:incluir_TELEFONE" />
+  </wsdl:message>
+  <wsdl:message name="incluir_TELEFONESoapOut">
+    <wsdl:part name="parameters" element="tns:incluir_TELEFONEResponse" />
+  </wsdl:message>
+  <wsdl:message name="Alterar_TELEFONESoapIn">
+    <wsdl:part name="parameters" element="tns:Alterar_TELEFONE" />
+  </wsdl:message>
+  <wsdl:message name="Alterar_TELEFONESoapOut">
+    <wsdl:part name="parameters" element="tns:Alterar_TELEFONEResponse" />
+  </wsdl:message>
+  <wsdl:message name="EXCLUIR_TELEFONESoapIn">
+    <wsdl:part name="parameters" element="tns:EXCLUIR_TELEFONE" />
+  </wsdl:message>
+  <wsdl:message name="EXCLUIR_TELEFONESoapOut">
+    <wsdl:part name="parameters" element="tns:EXCLUIR_TELEFONEResponse" />
+  </wsdl:message>
+  <wsdl:message name="IncluirCadastroClienteCabecalhoHttpGetIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+    <wsdl:part name="NOME" type="s:string" />
+    <wsdl:part name="CPF" type="s:string" />
+    <wsdl:part name="RG" type="s:string" />
+    <wsdl:part name="EMISSOR" type="s:string" />
+    <wsdl:part name="UF_EMISSAO" type="s:string" />
+    <wsdl:part name="SEXO" type="s:string" />
+    <wsdl:part name="ESTADO_CIVIL" type="s:string" />
+    <wsdl:part name="NOME_MAE" type="s:string" />
+    <wsdl:part name="NOME_PAI" type="s:string" />
+    <wsdl:part name="UF" type="s:string" />
+    <wsdl:part name="CIDADE" type="s:string" />
+    <wsdl:part name="DT_EMISSAO" type="s:string" />
+    <wsdl:part name="BAIRRO" type="s:string" />
+    <wsdl:part name="PONTO_REFERENCIA" type="s:string" />
+    <wsdl:part name="TIPO_LOGRADOURO" type="s:string" />
+    <wsdl:part name="END_NUM" type="s:string" />
+    <wsdl:part name="DESC_LOGRADOURO" type="s:string" />
+    <wsdl:part name="USER_CADASTRO" type="s:string" />
+    <wsdl:part name="EMAIL" type="s:string" />
+    <wsdl:part name="TIPO_DOC" type="s:string" />
+    <wsdl:part name="QT_DEPENDENTES" type="s:string" />
+    <wsdl:part name="FILIAL_CAD" type="s:string" />
+    <wsdl:part name="DATA_NASCIMENTO" type="s:string" />
+    <wsdl:part name="PROFISSAO" type="s:string" />
+    <wsdl:part name="CEP" type="s:string" />
+    <wsdl:part name="DTCADASTRO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IncluirCadastroClienteCabecalhoHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="AlterarCadastroClienteCabecalhoHttpGetIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+    <wsdl:part name="NOME" type="s:string" />
+    <wsdl:part name="CPF" type="s:string" />
+    <wsdl:part name="RG" type="s:string" />
+    <wsdl:part name="EMISSOR" type="s:string" />
+    <wsdl:part name="UF_EMISSAO" type="s:string" />
+    <wsdl:part name="SEXO" type="s:string" />
+    <wsdl:part name="ESTADO_CIVIL" type="s:string" />
+    <wsdl:part name="NOME_MAE" type="s:string" />
+    <wsdl:part name="NOME_PAI" type="s:string" />
+    <wsdl:part name="UF" type="s:string" />
+    <wsdl:part name="CIDADE" type="s:string" />
+    <wsdl:part name="DT_EMISSAO" type="s:string" />
+    <wsdl:part name="BAIRRO" type="s:string" />
+    <wsdl:part name="PONTO_REFERENCIA" type="s:string" />
+    <wsdl:part name="TIPO_LOGRADOURO" type="s:string" />
+    <wsdl:part name="END_NUM" type="s:string" />
+    <wsdl:part name="DESC_LOGRADOURO" type="s:string" />
+    <wsdl:part name="USER_CADASTRO" type="s:string" />
+    <wsdl:part name="EMAIL" type="s:string" />
+    <wsdl:part name="TIPO_DOC" type="s:string" />
+    <wsdl:part name="QT_DEPENDENTES" type="s:string" />
+    <wsdl:part name="FILIAL_CAD" type="s:string" />
+    <wsdl:part name="DATA_NASCIMENTO" type="s:string" />
+    <wsdl:part name="PROFISSAO" type="s:string" />
+    <wsdl:part name="CEP" type="s:string" />
+    <wsdl:part name="DTCADASTRO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AlterarCadastroClienteCabecalhoHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="ExcluirCadastroClienteHttpGetIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExcluirCadastroClienteHttpGetOut" />
+  <wsdl:message name="incluir_TELEFONEHttpGetIn">
+    <wsdl:part name="TELCODPACIENTE" type="s:string" />
+    <wsdl:part name="TIPO" type="s:string" />
+    <wsdl:part name="DDD" type="s:string" />
+    <wsdl:part name="NUMERO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="incluir_TELEFONEHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Alterar_TELEFONEHttpGetIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+    <wsdl:part name="TIPO" type="s:string" />
+    <wsdl:part name="DDD" type="s:string" />
+    <wsdl:part name="NUMERO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Alterar_TELEFONEHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="EXCLUIR_TELEFONEHttpGetIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EXCLUIR_TELEFONEHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="IncluirCadastroClienteCabecalhoHttpPostIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+    <wsdl:part name="NOME" type="s:string" />
+    <wsdl:part name="CPF" type="s:string" />
+    <wsdl:part name="RG" type="s:string" />
+    <wsdl:part name="EMISSOR" type="s:string" />
+    <wsdl:part name="UF_EMISSAO" type="s:string" />
+    <wsdl:part name="SEXO" type="s:string" />
+    <wsdl:part name="ESTADO_CIVIL" type="s:string" />
+    <wsdl:part name="NOME_MAE" type="s:string" />
+    <wsdl:part name="NOME_PAI" type="s:string" />
+    <wsdl:part name="UF" type="s:string" />
+    <wsdl:part name="CIDADE" type="s:string" />
+    <wsdl:part name="DT_EMISSAO" type="s:string" />
+    <wsdl:part name="BAIRRO" type="s:string" />
+    <wsdl:part name="PONTO_REFERENCIA" type="s:string" />
+    <wsdl:part name="TIPO_LOGRADOURO" type="s:string" />
+    <wsdl:part name="END_NUM" type="s:string" />
+    <wsdl:part name="DESC_LOGRADOURO" type="s:string" />
+    <wsdl:part name="USER_CADASTRO" type="s:string" />
+    <wsdl:part name="EMAIL" type="s:string" />
+    <wsdl:part name="TIPO_DOC" type="s:string" />
+    <wsdl:part name="QT_DEPENDENTES" type="s:string" />
+    <wsdl:part name="FILIAL_CAD" type="s:string" />
+    <wsdl:part name="DATA_NASCIMENTO" type="s:string" />
+    <wsdl:part name="PROFISSAO" type="s:string" />
+    <wsdl:part name="CEP" type="s:string" />
+    <wsdl:part name="DTCADASTRO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IncluirCadastroClienteCabecalhoHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="AlterarCadastroClienteCabecalhoHttpPostIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+    <wsdl:part name="NOME" type="s:string" />
+    <wsdl:part name="CPF" type="s:string" />
+    <wsdl:part name="RG" type="s:string" />
+    <wsdl:part name="EMISSOR" type="s:string" />
+    <wsdl:part name="UF_EMISSAO" type="s:string" />
+    <wsdl:part name="SEXO" type="s:string" />
+    <wsdl:part name="ESTADO_CIVIL" type="s:string" />
+    <wsdl:part name="NOME_MAE" type="s:string" />
+    <wsdl:part name="NOME_PAI" type="s:string" />
+    <wsdl:part name="UF" type="s:string" />
+    <wsdl:part name="CIDADE" type="s:string" />
+    <wsdl:part name="DT_EMISSAO" type="s:string" />
+    <wsdl:part name="BAIRRO" type="s:string" />
+    <wsdl:part name="PONTO_REFERENCIA" type="s:string" />
+    <wsdl:part name="TIPO_LOGRADOURO" type="s:string" />
+    <wsdl:part name="END_NUM" type="s:string" />
+    <wsdl:part name="DESC_LOGRADOURO" type="s:string" />
+    <wsdl:part name="USER_CADASTRO" type="s:string" />
+    <wsdl:part name="EMAIL" type="s:string" />
+    <wsdl:part name="TIPO_DOC" type="s:string" />
+    <wsdl:part name="QT_DEPENDENTES" type="s:string" />
+    <wsdl:part name="FILIAL_CAD" type="s:string" />
+    <wsdl:part name="DATA_NASCIMENTO" type="s:string" />
+    <wsdl:part name="PROFISSAO" type="s:string" />
+    <wsdl:part name="CEP" type="s:string" />
+    <wsdl:part name="DTCADASTRO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AlterarCadastroClienteCabecalhoHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="ExcluirCadastroClienteHttpPostIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExcluirCadastroClienteHttpPostOut" />
+  <wsdl:message name="incluir_TELEFONEHttpPostIn">
+    <wsdl:part name="TELCODPACIENTE" type="s:string" />
+    <wsdl:part name="TIPO" type="s:string" />
+    <wsdl:part name="DDD" type="s:string" />
+    <wsdl:part name="NUMERO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="incluir_TELEFONEHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Alterar_TELEFONEHttpPostIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+    <wsdl:part name="TIPO" type="s:string" />
+    <wsdl:part name="DDD" type="s:string" />
+    <wsdl:part name="NUMERO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Alterar_TELEFONEHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="EXCLUIR_TELEFONEHttpPostIn">
+    <wsdl:part name="CODPACIENTE" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EXCLUIR_TELEFONEHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:portType name="ControleDb_CadastroClienteSoap">
+    <wsdl:operation name="IncluirCadastroClienteCabecalho">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cadastra Cliente Cabeçalho na Base de Dados</wsdl:documentation>
+      <wsdl:input message="tns:IncluirCadastroClienteCabecalhoSoapIn" />
+      <wsdl:output message="tns:IncluirCadastroClienteCabecalhoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AlterarCadastroClienteCabecalho">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cadastra Cliente Cabeçalho na Base de Dados</wsdl:documentation>
+      <wsdl:input message="tns:AlterarCadastroClienteCabecalhoSoapIn" />
+      <wsdl:output message="tns:AlterarCadastroClienteCabecalhoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirCadastroCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Exclui Cadastro do PACIENTE do Banco de Dados</wsdl:documentation>
+      <wsdl:input message="tns:ExcluirCadastroClienteSoapIn" />
+      <wsdl:output message="tns:ExcluirCadastroClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="incluir_TELEFONE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inclui Somente o Telefone na MV_CAD_PACIENTES_TELEFONE</wsdl:documentation>
+      <wsdl:input message="tns:incluir_TELEFONESoapIn" />
+      <wsdl:output message="tns:incluir_TELEFONESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_TELEFONE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ALTERA Somente o Telefone na MV_CAD_PACIENTE_TELEFONE</wsdl:documentation>
+      <wsdl:input message="tns:Alterar_TELEFONESoapIn" />
+      <wsdl:output message="tns:Alterar_TELEFONESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EXCLUIR_TELEFONE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">EXCLUI Somente o Telefone na MV_CAD_PACIENTE_TELEFONE</wsdl:documentation>
+      <wsdl:input message="tns:EXCLUIR_TELEFONESoapIn" />
+      <wsdl:output message="tns:EXCLUIR_TELEFONESoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ControleDb_CadastroClienteHttpGet">
+    <wsdl:operation name="IncluirCadastroClienteCabecalho">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cadastra Cliente Cabeçalho na Base de Dados</wsdl:documentation>
+      <wsdl:input message="tns:IncluirCadastroClienteCabecalhoHttpGetIn" />
+      <wsdl:output message="tns:IncluirCadastroClienteCabecalhoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AlterarCadastroClienteCabecalho">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cadastra Cliente Cabeçalho na Base de Dados</wsdl:documentation>
+      <wsdl:input message="tns:AlterarCadastroClienteCabecalhoHttpGetIn" />
+      <wsdl:output message="tns:AlterarCadastroClienteCabecalhoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirCadastroCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Exclui Cadastro do PACIENTE do Banco de Dados</wsdl:documentation>
+      <wsdl:input message="tns:ExcluirCadastroClienteHttpGetIn" />
+      <wsdl:output message="tns:ExcluirCadastroClienteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="incluir_TELEFONE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inclui Somente o Telefone na MV_CAD_PACIENTES_TELEFONE</wsdl:documentation>
+      <wsdl:input message="tns:incluir_TELEFONEHttpGetIn" />
+      <wsdl:output message="tns:incluir_TELEFONEHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_TELEFONE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ALTERA Somente o Telefone na MV_CAD_PACIENTE_TELEFONE</wsdl:documentation>
+      <wsdl:input message="tns:Alterar_TELEFONEHttpGetIn" />
+      <wsdl:output message="tns:Alterar_TELEFONEHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EXCLUIR_TELEFONE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">EXCLUI Somente o Telefone na MV_CAD_PACIENTE_TELEFONE</wsdl:documentation>
+      <wsdl:input message="tns:EXCLUIR_TELEFONEHttpGetIn" />
+      <wsdl:output message="tns:EXCLUIR_TELEFONEHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ControleDb_CadastroClienteHttpPost">
+    <wsdl:operation name="IncluirCadastroClienteCabecalho">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cadastra Cliente Cabeçalho na Base de Dados</wsdl:documentation>
+      <wsdl:input message="tns:IncluirCadastroClienteCabecalhoHttpPostIn" />
+      <wsdl:output message="tns:IncluirCadastroClienteCabecalhoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AlterarCadastroClienteCabecalho">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cadastra Cliente Cabeçalho na Base de Dados</wsdl:documentation>
+      <wsdl:input message="tns:AlterarCadastroClienteCabecalhoHttpPostIn" />
+      <wsdl:output message="tns:AlterarCadastroClienteCabecalhoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirCadastroCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Exclui Cadastro do PACIENTE do Banco de Dados</wsdl:documentation>
+      <wsdl:input message="tns:ExcluirCadastroClienteHttpPostIn" />
+      <wsdl:output message="tns:ExcluirCadastroClienteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="incluir_TELEFONE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inclui Somente o Telefone na MV_CAD_PACIENTES_TELEFONE</wsdl:documentation>
+      <wsdl:input message="tns:incluir_TELEFONEHttpPostIn" />
+      <wsdl:output message="tns:incluir_TELEFONEHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_TELEFONE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ALTERA Somente o Telefone na MV_CAD_PACIENTE_TELEFONE</wsdl:documentation>
+      <wsdl:input message="tns:Alterar_TELEFONEHttpPostIn" />
+      <wsdl:output message="tns:Alterar_TELEFONEHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EXCLUIR_TELEFONE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">EXCLUI Somente o Telefone na MV_CAD_PACIENTE_TELEFONE</wsdl:documentation>
+      <wsdl:input message="tns:EXCLUIR_TELEFONEHttpPostIn" />
+      <wsdl:output message="tns:EXCLUIR_TELEFONEHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ControleDb_CadastroClienteSoap" type="tns:ControleDb_CadastroClienteSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IncluirCadastroClienteCabecalho">
+      <soap:operation soapAction="http://tempuri.org/IncluirCadastroClienteCabecalho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlterarCadastroClienteCabecalho">
+      <soap:operation soapAction="http://tempuri.org/AlterarCadastroClienteCabecalho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirCadastroCliente">
+      <soap:operation soapAction="http://tempuri.org/ExcluirCadastroCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="incluir_TELEFONE">
+      <soap:operation soapAction="http://tempuri.org/incluir_TELEFONE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_TELEFONE">
+      <soap:operation soapAction="http://tempuri.org/Alterar_TELEFONE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EXCLUIR_TELEFONE">
+      <soap:operation soapAction="http://tempuri.org/EXCLUIR_TELEFONE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ControleDb_CadastroClienteSoap12" type="tns:ControleDb_CadastroClienteSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IncluirCadastroClienteCabecalho">
+      <soap12:operation soapAction="http://tempuri.org/IncluirCadastroClienteCabecalho" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlterarCadastroClienteCabecalho">
+      <soap12:operation soapAction="http://tempuri.org/AlterarCadastroClienteCabecalho" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirCadastroCliente">
+      <soap12:operation soapAction="http://tempuri.org/ExcluirCadastroCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="incluir_TELEFONE">
+      <soap12:operation soapAction="http://tempuri.org/incluir_TELEFONE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_TELEFONE">
+      <soap12:operation soapAction="http://tempuri.org/Alterar_TELEFONE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EXCLUIR_TELEFONE">
+      <soap12:operation soapAction="http://tempuri.org/EXCLUIR_TELEFONE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ControleDb_CadastroClienteHttpGet" type="tns:ControleDb_CadastroClienteHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="IncluirCadastroClienteCabecalho">
+      <http:operation location="/IncluirCadastroClienteCabecalho" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlterarCadastroClienteCabecalho">
+      <http:operation location="/AlterarCadastroClienteCabecalho" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirCadastroCliente">
+      <http:operation location="/ExcluirCadastroCliente" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="incluir_TELEFONE">
+      <http:operation location="/incluir_TELEFONE" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_TELEFONE">
+      <http:operation location="/Alterar_TELEFONE" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EXCLUIR_TELEFONE">
+      <http:operation location="/EXCLUIR_TELEFONE" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ControleDb_CadastroClienteHttpPost" type="tns:ControleDb_CadastroClienteHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="IncluirCadastroClienteCabecalho">
+      <http:operation location="/IncluirCadastroClienteCabecalho" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlterarCadastroClienteCabecalho">
+      <http:operation location="/AlterarCadastroClienteCabecalho" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirCadastroCliente">
+      <http:operation location="/ExcluirCadastroCliente" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="incluir_TELEFONE">
+      <http:operation location="/incluir_TELEFONE" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar_TELEFONE">
+      <http:operation location="/Alterar_TELEFONE" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EXCLUIR_TELEFONE">
+      <http:operation location="/EXCLUIR_TELEFONE" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ControleDb_CadastroCliente">
+    <wsdl:port name="ControleDb_CadastroClienteSoap" binding="tns:ControleDb_CadastroClienteSoap">
+      <soap:address location="http://localhost/wsClinVitta/ControleDb_CadastroCliente.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ControleDb_CadastroClienteSoap12" binding="tns:ControleDb_CadastroClienteSoap12">
+      <soap12:address location="http://localhost/wsClinVitta/ControleDb_CadastroCliente.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ControleDb_CadastroClienteHttpGet" binding="tns:ControleDb_CadastroClienteHttpGet">
+      <http:address location="http://localhost/wsClinVitta/ControleDb_CadastroCliente.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ControleDb_CadastroClienteHttpPost" binding="tns:ControleDb_CadastroClienteHttpPost">
+      <http:address location="http://localhost/wsClinVitta/ControleDb_CadastroCliente.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
